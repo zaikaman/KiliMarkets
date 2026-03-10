@@ -1,50 +1,85 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+Version change: template -> 1.0.0
+Modified principles:
+- Template principle 1 -> I. Code Quality Is a Release Gate
+- Template principle 2 -> II. Experience Consistency Is Non-Negotiable
+- Template principle 3 -> III. Performance Budgets Are Product Requirements
+Added sections:
+- Delivery Standards
+- Review & Quality Gates
+Removed sections:
+- Template principles 4 and 5 placeholders
+Templates requiring updates:
+- ✅ .specify/templates/plan-template.md
+- ✅ .specify/templates/spec-template.md
+- ✅ .specify/templates/tasks-template.md
+- ✅ .github/agents/speckit.specify.agent.md
+- ✅ .github/agents/speckit.tasks.agent.md
+- ✅ .github/agents/speckit.implement.agent.md
+Follow-up TODOs:
+- None
+-->
+# KiliMarkets Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Code Quality Is a Release Gate
+All production changes MUST preserve a clear structure, small cohesive modules, and
+readable intent. Teams MUST prefer reuse over duplication, keep public interfaces explicit,
+and ship code that passes the project's formatting, linting, and static analysis checks
+before work is considered complete. Temporary workarounds, dead code, and undocumented
+behavior changes are not acceptable unless they are tracked with an explicit removal plan
+approved during review. Rationale: maintainable code keeps delivery speed high as the
+product grows.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Experience Consistency Is Non-Negotiable
+Every user-facing feature MUST reuse the project's established language, interaction
+patterns, visual hierarchy, and handling for loading, empty, success, and error states.
+Specifications and plans MUST define the expected user flow and identify any intentional
+deviations before implementation begins. Accessibility and clarity are part of consistency:
+new screens and interactions MUST remain understandable, predictable, and usable for the
+same audience as existing flows. Rationale: consistent experiences reduce user friction and
+support costs.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Performance Budgets Are Product Requirements
+Each feature MUST declare measurable performance expectations before implementation,
+including the user-visible budget that matters most for that work such as render latency,
+interaction response time, data processing time, or sustained throughput. Plans and tasks
+MUST include the mechanism used to validate those budgets, and work that misses an agreed
+budget is incomplete until the budget is met or formally amended. Rationale: performance is
+part of product quality, not a post-release optimization.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+## Delivery Standards
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+- Specifications MUST capture user scenarios, acceptance scenarios, and explicit experience
+	and performance requirements for each feature.
+- Implementation plans MUST document how code quality checks, consistency decisions, and
+	performance validation will be completed.
+- Automated tests are OPTIONAL and only required when explicitly requested by the user or
+	mandated by a feature-specific risk decision. When tests are omitted, teams MUST still
+	record manual validation steps and performance evidence appropriate to the change.
+- Tasks MUST include work for shared UI patterns, code hygiene, and performance validation
+	whenever a feature affects those areas.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Review & Quality Gates
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Every plan and delivery review MUST pass a Constitution Check covering code quality,
+	experience consistency, and performance budgets.
+- Reviewers MUST reject changes that introduce duplicate logic, inconsistent user-facing
+	behavior, or missing performance targets without a documented exception.
+- Feature completion evidence MUST include the artifacts used for validation, such as lint
+	output, design review notes, scenario walkthroughs, or performance measurements.
+- Exceptions are time-boxed by default and MUST include owner, scope, and removal date.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes conflicting local habits, templates, and informal guidance.
+Amendments MUST be documented in this file, include a summary of affected principles or
+sections, and update any dependent templates or agent guidance in the same change. Versioning
+follows semantic rules: MAJOR for incompatible governance changes or principle removals,
+MINOR for new principles or materially expanded obligations, and PATCH for clarifications
+that do not change project obligations. Compliance review is required for every new plan and
+for every change set presented for implementation or merge.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-03-10 | **Last Amended**: 2026-03-10
