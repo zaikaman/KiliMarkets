@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["apps", "packages", "contracts", "infra"],
+  "exclude": ["injective-ts", "node_modules", "dist"]
+}

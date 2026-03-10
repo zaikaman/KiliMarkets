@@ -1,0 +1,1 @@
+- the injective-ts folder and injective-helix-demo are only for docs, do not change anything or edit anything in them.

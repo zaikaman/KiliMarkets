@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.local
+.env.*.local
+.vite/
+.DS_Store
+apps/web/dist/
+apps/web/.env.local
+contracts/evm/artifacts/
+contracts/evm/cache/
+contracts/cosmwasm/target/
+contracts/cosmwasm/artifacts/
+injective-ts
+injective-helix-demo

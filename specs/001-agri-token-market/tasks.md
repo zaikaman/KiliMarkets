@@ -25,13 +25,13 @@
 
 **Purpose**: Initialize the monorepo, toolchain, and base package structure for Injective Testnet delivery.
 
-- [ ] T001 Create workspace scaffolding in package.json and pnpm-workspace.yaml
-- [ ] T002 Create shared TypeScript and workspace config in tsconfig.base.json and .gitignore
-- [ ] T003 [P] Configure linting and formatting in eslint.config.mjs and .prettierrc.json
-- [ ] T004 [P] Initialize the web app package in apps/web/package.json and apps/web/vite.config.ts
-- [ ] T005 [P] Initialize shared package manifests in packages/domain/package.json and packages/sdk-injective/package.json
-- [ ] T006 [P] Initialize smart contract workspaces in contracts/evm/package.json and contracts/cosmwasm/Cargo.toml
-- [ ] T007 [P] Create environment and testnet config templates in apps/web/.env.example and infra/config/networks/testnet.ts
+- [x] T001 Create workspace scaffolding in package.json and pnpm-workspace.yaml
+- [x] T002 Create shared TypeScript and workspace config in tsconfig.base.json and .gitignore
+- [x] T003 [P] Configure linting and formatting in eslint.config.mjs and .prettierrc.json
+- [x] T004 [P] Initialize the web app package in apps/web/package.json and apps/web/vite.config.ts
+- [x] T005 [P] Initialize shared package manifests in packages/domain/package.json and packages/sdk-injective/package.json
+- [x] T006 [P] Initialize smart contract workspaces in contracts/evm/package.json and contracts/cosmwasm/Cargo.toml
+- [x] T007 [P] Create environment and testnet config templates in apps/web/.env.example and infra/config/networks/testnet.ts
 
 ---
 

@@ -1,0 +1,16 @@
+[workspace]
+members = ["contracts/hedge-manager"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/example/kilimarkets"
+
+[workspace.dependencies]
+cosmwasm-std = "2.1.4"
+cw-storage-plus = "2.0.0"
+schemars = "0.8.21"
+serde = { version = "1.0.219", default-features = false, features = ["derive"] }
+thiserror = "2.0.12"

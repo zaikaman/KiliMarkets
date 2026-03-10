@@ -1,0 +1,31 @@
+{
+  "name": "kilimarkets",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.6.0",
+  "scripts": {
+    "dev": "pnpm --filter @kilimarkets/web dev",
+    "build": "pnpm -r --if-present build",
+    "lint": "pnpm -r --if-present lint",
+    "type-check": "pnpm -r --if-present type-check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "contracts:evm:compile": "pnpm --dir contracts/evm compile",
+    "contracts:cosmwasm:check": "cargo check --manifest-path contracts/cosmwasm/Cargo.toml"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "hardhat": "^2.22.18",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.2.1"
+  }
+}
