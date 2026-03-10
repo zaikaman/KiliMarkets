@@ -14,6 +14,7 @@
     "contracts:cosmwasm:check": "cargo check --manifest-path contracts/cosmwasm/Cargo.toml"
   },
   "devDependencies": {
+    "@tanstack/react-query": "^5.66.11",
     "@eslint/js": "^9.22.0",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@types/node": "^22.13.10",
@@ -24,8 +25,10 @@
     "globals": "^16.0.0",
     "hardhat": "^2.22.18",
     "prettier": "^3.5.3",
+    "react-router-dom": "^7.3.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1",
+    "viem": "^2.23.5",
     "vite": "^6.2.1"
   }
 }

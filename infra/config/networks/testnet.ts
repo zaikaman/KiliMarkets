@@ -6,8 +6,14 @@ export const injectiveTestnetConfig = {
     indexer: 'https://testnet.sentry.exchange.grpc-web.injective.network',
     grpc: 'https://testnet.sentry.chain.grpc-web.injective.network',
     lcd: 'https://testnet.sentry.lcd.injective.network',
+    rpc: 'https://testnet.sentry.tm.injective.network',
     evmRpc: 'https://k8s.testnet.json-rpc.injective.network/',
     websocket: 'wss://k8s.testnet.ws.injective.network/',
+  },
+  wallets: ['keplr', 'metamask'],
+  clients: {
+    evm: 'viem-public-client',
+    query: 'tanstack-query',
   },
 } as const
 
@@ -20,6 +26,7 @@ export const getDefaultWebEnv = () => ({
   VITE_INDEXER_URL: injectiveTestnetConfig.endpoints.indexer,
   VITE_GRPC_URL: injectiveTestnetConfig.endpoints.grpc,
   VITE_LCD_URL: injectiveTestnetConfig.endpoints.lcd,
+  VITE_RPC_URL: injectiveTestnetConfig.endpoints.rpc,
   VITE_EVM_RPC_URL: injectiveTestnetConfig.endpoints.evmRpc,
   VITE_WS_URL: injectiveTestnetConfig.endpoints.websocket,
 })

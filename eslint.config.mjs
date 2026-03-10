@@ -12,6 +12,7 @@ export default tseslint.config(
       'contracts/cosmwasm/target/**',
       'contracts/evm/artifacts/**',
       'contracts/evm/cache/**',
+      'contracts/evm/typechain-types/**',
     ],
   },
   js.configs.recommended,

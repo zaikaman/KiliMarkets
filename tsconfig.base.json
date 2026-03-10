@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@kilimarkets/domain": ["packages/domain/src/index.ts"],
-      "@kilimarkets/sdk-injective": ["packages/sdk-injective/src/index.ts"]
+      "@kilimarkets/sdk-injective": ["packages/sdk-injective/src/index.ts"],
+      "@kilimarkets/ui": ["packages/ui/src/index.ts"]
     }
   }
 }

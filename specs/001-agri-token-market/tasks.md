@@ -41,14 +41,14 @@
 
 **⚠️ CRITICAL**: No user story work should begin until this phase is complete.
 
-- [ ] T008 Create shared domain models for users, lots, assets, orders, positions, and localization in packages/domain/src/assets/commodity.ts and packages/domain/src/localization/language.ts
-- [ ] T009 [P] Implement Injective endpoint, chain ID, and public client configuration in packages/sdk-injective/src/config/network.ts and infra/config/networks/testnet.ts
-- [ ] T010 [P] Create commodity market and oracle allowlists in infra/config/markets/commodities.ts and infra/config/oracles/feeds.ts
-- [ ] T011 [P] Implement wallet connection and address/subaccount helpers in packages/sdk-injective/src/wallet/connectors.ts and packages/sdk-injective/src/addresses/subaccount.ts
-- [ ] T012 [P] Create shared query client and low-bandwidth fetch policy in packages/sdk-injective/src/queries/queryClient.ts and apps/web/src/hooks/useNetworkMode.ts
-- [ ] T013 Create application providers and route shell in apps/web/src/app/providers.tsx and apps/web/src/app/router.tsx
-- [ ] T014 [P] Create mobile-first UI primitives and async feedback states in packages/ui/src/mobile/AppShell.tsx and packages/ui/src/feedback/AsyncState.tsx
-- [ ] T015 Create frontend service boundaries for wallet, portfolio, market, minting, and hedge flows in apps/web/src/services/wallet-service.ts and apps/web/src/services/portfolio-service.ts
+- [x] T008 Create shared domain models for users, lots, assets, orders, positions, and localization in packages/domain/src/assets/commodity.ts and packages/domain/src/localization/language.ts
+- [x] T009 [P] Implement Injective endpoint, chain ID, and public client configuration in packages/sdk-injective/src/config/network.ts and infra/config/networks/testnet.ts
+- [x] T010 [P] Create commodity market and oracle allowlists in infra/config/markets/commodities.ts and infra/config/oracles/feeds.ts
+- [x] T011 [P] Implement wallet connection and address/subaccount helpers in packages/sdk-injective/src/wallet/connectors.ts and packages/sdk-injective/src/addresses/subaccount.ts
+- [x] T012 [P] Create shared query client and low-bandwidth fetch policy in packages/sdk-injective/src/queries/queryClient.ts and apps/web/src/hooks/useNetworkMode.ts
+- [x] T013 Create application providers and route shell in apps/web/src/app/providers.tsx and apps/web/src/app/router.tsx
+- [x] T014 [P] Create mobile-first UI primitives and async feedback states in packages/ui/src/mobile/AppShell.tsx and packages/ui/src/feedback/AsyncState.tsx
+- [x] T015 Create frontend service boundaries for wallet, portfolio, market, minting, and hedge flows in apps/web/src/services/wallet-service.ts and apps/web/src/services/portfolio-service.ts
 
 **Checkpoint**: Foundation ready — user story work can proceed with shared config, routing, wallet helpers, and market/oracle registries in place.
 

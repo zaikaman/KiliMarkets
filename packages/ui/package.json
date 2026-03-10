@@ -1,5 +1,5 @@
 {
-  "name": "@kilimarkets/sdk-injective",
+  "name": "@kilimarkets/ui",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,10 +17,6 @@
     "type-check": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.66.11",
-    "@injectivelabs/networks": "^1.18.8",
-    "@injectivelabs/sdk-ts": "^1.18.8",
-    "@kilimarkets/domain": "workspace:*",
-    "viem": "^2.23.5"
+    "react": "^19.0.0"
   }
 }
